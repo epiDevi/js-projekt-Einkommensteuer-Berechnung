@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Einkommensteuer Berechnungs App</title>
+</head>
+<body>
+    <div class="wrap">
+        <section class="container">
+            <h1>Einkommensteuer Berechnung</h1>
+            <form action="" onsubmit="rechnen(); return false">
+                <section class="grid">
+                    <div class="left">
+                        <h3>Jajr</h3>
+                    </div>
+                    <div class="right">
+                        <select name="" id="jahr">
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+                    <div class="left">
+                        <h3>zvE</h3>
+                    </div>
+                    <div class="right">
+                        <input type="number" name="" id="bruttoPerson1" placeholder="Person1">
+                        <label for="euro">Euro</label>
+                        <div class="person2" style="display: none;" >
+                            <input type="number" name="" id="bruttoPerson2" placeholder="Person2">
+                            <label for="euro" >Euro</label>
+                        </div>
+                        
+                    </div>
+                    <div class="left">
+                        <h3>Einzeln oder Zusammen</h3>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="person" value="einzeln" id="einzeln" checked onclick="hideInput()">
+                        <label for="einzeln">Einzeln</label>
+                        <input type="radio" name="person" value="zusammen" id="zusammen" onclick="showInput()">
+                        <label for="zusammen">Zusammen</label>
+                    </div>
+                </section>
+                <input type="submit" value="Rechnen">
+            </form>
+            <p id="ergenis">Einkommenssteuer ist :</p>
+            
+        </section>
+        
+
+    </div>
+    <script src="./assets/js/main.js" ></script>
+</body>
+</html>
